@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 微软雅黑;
+}
+main,#startView,#playView {
+    width: 1366px;
+    height: 661px;
+    outline: 1px solid black;
+}/*main, start, level_1*/
+
+/*main*/
+main {
+    overflow: hidden;
+    background: black;
+}
+
+/*开始界面*/
+#startView {
+    /*display: none;*/
+    background: url("../images/readyBg.jpg") 0 -432px;
+    overflow: hidden;
+}
+#help {
+    width: 202px;
+    /*outline: 1px solid blue;*/
+    margin: 100px 0 0 160px;
+}/*开始界面_帮助*/
+#help p * {
+    vertical-align: middle;
+}
+#help p strong,.help_exp strong{
+    color: red;
+    font-size: 17px;
+}
+#help p img{
+    margin-right: 4px;
+}
+#help_exp img{/*文字环绕图片*/
+    float: left;
+}
+#startView strong:nth-of-type(4) {
+    font-size: 25px;
+}
+#btn_start {
+    width: 252px;
+    height: 66px;
+    margin: 15px 0 0 300px;
+    background: url("../images/start.gif");
+}/*开始界面_开始按钮*/
+#btn_start:hover{
+    background: url("../images/startOver.gif");
+}
+#btn_start:active{
+    background: url("../images/startClick.gif");
+}
+
+/*玩耍界面*/
+#playView {
+    display: none;
+    background: url("../images/bg.jpg") -280px -170px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+#btn_back,#score_column {
+    /*outline: 1px solid black;*/
+    margin-top: 15px;
+}
+#btn_back {
+    width: 81px;
+    height: 34px;
+    float: left;
+    background: url("../images/ui/back.gif");
+}/*玩耍界面_返回界面按钮*/
+#btn_back:hover {
+    background: url("../images/ui/backover.gif");
+}
+#btn_back:active {
+    background: url("../images/ui/backClick.gif");
+}
+    /*玩耍界面_分数*/
+#score_column {
+    width: 139px;
+    height: 50px;
+    float: right;
+    background: url("../images/ui/RunnerGame.gif");
+}/*玩耍界面_分数栏*/
+#player_score{
+    display: block;
+    margin: 28px 0 0 39px;
+}/*玩耍界面_分数栏_分数*/
+    /*玩耍界面_玩家血量*/
+#player_blood_bg,#player_blood_frame,#player_blood {
+    width: 56px;
+    height: 7px;
+}/*玩家血量*/
+#player_blood_bg {
+    background: url("../images/ui/HP0.png");
+    position: absolute;
+    display: none;
+}/*玩耍界面_玩家血量背景*/
+#player_blood_frame {
+    /*width: 50px;*/
+    overflow: hidden;
+}/*玩耍界面_玩家血量框*/
+#player_blood {
+    background: url("../images/ui/HPMAX.png");
+}/*玩耍界面_玩家血量*/
+    /*玩耍界面_玩家经验*/
+#player_exp_bg,#player_exp_frame,#player_exp {
+    width: 31px;
+    height: 166px;
+}
+#player_exp_bg {
+    background: url("../images/ui/exp0.png");
+    position: absolute;
+    top: 240px;
+}/*玩耍界面_玩家经验_背景*/
+#player_exp {
+    background: url("../images/ui/expFull.gif");
+    position: absolute;
+    clip: rect( -50px 31px 166px 0);
+}/*玩耍界面_玩家经验_经验*/

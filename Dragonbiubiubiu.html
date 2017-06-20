@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>恐龙BiuBiuBiu</title>
+    <link rel="bookmark" type="image/x-icon" href="images/dragon/small/stand.gif">
+    <link rel="shortcut icon" href="images/dragon/small/stand.gif">
+    <link rel="icon" href="images/dragon/small/stand.gif">
+    <link rel="stylesheet" href="css/DragonBiuBiuBiu.css">
+</head>
+<body>
+<main>
+    <!--<img src="images/dragon/small/hit.gif" alt="">-->
+    <!--开始界面-->
+    <section id="startView">
+        <!--开始界面_帮助-->
+        <div id="help">
+            <img src="images/help/Help.png" alt="">
+            <p>
+                <img src="images/help/Help1.png" alt="">
+                <strong>长按</strong>空格键攻击！
+            </p>
+            <p>
+                <img src="images/help/Help2.png" alt="">
+                伤害有<strong>延迟</strong>！
+            </p>
+            <p>开局用三个，且用且<strong>珍惜</strong></p>
+            <p>
+            <img src="images/help/boom.gif" alt="">一个格子为一个大招
+            </p>
+            <div class="help_exp">
+                <img src="images/help/exp.gif" alt="">
+                此乃<strong>经验瓶</strong>，经验满了<br/><br/>
+                后,宝贝龙会<strong>进化</strong>,究极状态会有龙卷风等你探索!<br/><br/>
+                <strong>游戏时间</strong>为<strong>90</strong>秒饿！
+            </div>
+        </div>
+        <!--开始界面_开始按钮-->
+        <div id="btn_start"></div>
+    </section>
+    <!--玩耍界面-->
+    <section id="playView">
+        <!--玩耍界面_返回界面按钮-->
+        <div id="btn_back"></div>
+        <!--玩耍界面_游戏剩余时间-->
+        <!--<div id="end_time"></div>-->
+        <!--玩耍界面_分数栏-->
+        <div id="score_column">
+            <!--玩耍界面_分数栏_分数-->
+            <span id="player_score">0分</span>
+        </div>
+        <!--玩耍界面_玩家血量-->
+        <div id="player_blood_bg"><!--玩耍界面_玩家血量_背景-->
+            <div id="player_blood_frame"><!--玩耍界面_玩家血量_边框-->
+                <div id="player_blood"></div><!--玩耍界面_玩家血量-->
+            </div>
+        </div>
+        <!--玩耍界面_玩家经验-->
+        <div id="player_exp_bg"><!--玩耍界面_玩家经验_背景-->
+            <div id="player_exp"></div><!--玩耍界面_玩家经验_经验-->
+        </div>
+
+        <!--玩耍界面_第一个关卡-->
+        <!--<section id="level_1"></section>-->
+    </section>
+</main>
+<!--<script src="js/Current.js"></script>-->
+<script src="js/Utils.js"></script>
+<script src="js/Enemy.js"></script>
+<script src="js/Bullet.js"></script>
+<script src="js/KeyControl.js"></script>
+<script src="js/Player.js"></script>
+<script src="js/Control.js"></script>
+</body>
+</html>
